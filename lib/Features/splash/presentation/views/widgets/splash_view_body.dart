@@ -36,7 +36,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Image.asset(AssetsData.logo),
-        SizedBox(
+        const SizedBox(
           height: 4,
         ),
         SlidingText(slidingAnimation: slidingAnimation),
@@ -47,9 +47,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void initSlidingAnimation() {
     animationController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
-    slidingAnimation = Tween<Offset>(begin: Offset(0, 3), end: Offset.zero)
+    slidingAnimation = Tween<Offset>(begin: const Offset(0, 3), end: Offset.zero)
         .animate(animationController);
     animationController.forward();
   }
