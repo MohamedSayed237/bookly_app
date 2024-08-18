@@ -14,7 +14,7 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * 0.2),
-          child: const CustomBookItem(),
+          child: const CustomBookItem(imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fsolguruz.com%2Fblog%2Fflutter-app-development-cost-a-complete-guide%2F&psig=AOvVaw0GEbL8gnculxCH4B7nm6S3&ust=1724083879613000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCP5Zr3_ocDFQAAAAAdAAAAABAE',),
         ),
         const SizedBox(
           height: 43,
